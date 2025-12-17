@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>All Blue | Media Recs</title>
+	<link rel="stylesheet" href="/styles.css" />
+	<style>
+		body {
+			background-image: url(assets/guppinocity.png);
+			background-size: 100vw;
+			font-family: MerchantCopy;
+			color: white;
+			overflow-x: hidden;
+			image-rendering: pixelated;
+			margin: -2px;
+		}
+
+		h1 {
+			font-size: 2.4rem;
+		}
+
+		p {
+			font-size: 1.6rem;
+		}
+
+		h1,
+		p {
+			margin: 1rem 0rem 1rem 0rem;
+			font-weight: 100;
+			text-align: right;
+		}
+
+		.face {
+			padding: 1rem;
+			background-color: rgba(255, 255, 255, 0.1);
+			width: 16vw;
+			height: 12rem;
+			border: 2px solid white;
+			border-radius: 0px 8px 8px 0px;
+			position: relative;
+			transition: background-color 0.4s ease;
+
+			display: flex;
+			align-items: start;
+			justify-content: end;
+			gap: 1rem;
+		}
+
+		.face::after {
+			content: "";
+			position: absolute;
+			bottom: -10px;
+			left: 16rem;
+			width: 0.8rem;
+			height: 10px;
+			border-right: 2px solid white;
+		}
+
+		.face:hover,
+		.info:hover {
+			background-color: rgba(255, 255, 255, 0.02);
+		}
+
+		.shelf {
+			margin: 0px 0px 8px 0px;
+			position: relative;
+			width: 72rem;
+			height: 12rem;
+		}
+
+		.board {
+			position: absolute;
+			bottom: 0px;
+			border: 2px solid white;
+			background-color: rgba(255, 255, 255, 0.02);
+			width: 72rem;
+			height: 0.4rem;
+			border-width: 2px 2px 2px 0px;
+			border-radius: 0px 8px 8px 0px;
+		}
+
+		.items {
+			position: absolute;
+			bottom: 0.2rem;
+			width: 64rem;
+			display: flex;
+			align-items: end;
+			padding: 0rem 2rem 0rem 2rem;
+			gap: 2rem;
+			overflow-y: visible;
+			flex-wrap: nowrap;
+			scrollbar-width: none;
+			z-index: 1000;
+		}
+
+		.item {
+			flex: 0 0 auto;
+			height: auto;
+			display: flex;
+		}
+
+		.item.watch img {
+			width: 8rem;
+		}
+
+		.item.listen img {
+			width: 10rem;
+		}
+
+		.item.read img {
+			width: 8rem;
+		}
+
+		.item.play img {
+			width: 8rem;
+		}
+
+		.info {
+			background: rgba(255, 255, 255, 0.1);
+			border: 2px solid white;
+			margin: 1rem 0rem 1rem 1rem;
+			padding: 1rem;
+			transition: background-color 0.4s ease;
+		}
+
+		.row {
+			margin: 0px 0px 8px 0px;
+			display: flex;
+			align-items: end;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="row">
+		<div class="face" style="width: 24rem; height:auto;">
+			<h1>
+				Media Recs
+			</h1>
+			<p style="text-align: left;">
+				Stuff of my favorites I'd like to recommend: Shows, movies, music, books, manga, games, etc.
+			</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="face">
+			<h1>
+				To watch:
+			</h1>
+		</div>
+		<div class="shelf">
+			<div class="items">
+				<div class="item watch">
+					<img src="assets/watch/phantom-thread.png">
+				</div>
+			</div>
+			<div class="board"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="face">
+			<h1>
+				To listen:
+			</h1>
+		</div>
+		<div class="shelf">
+			<div class="items">
+				<div class="item listen">
+					<img src="assets/listen/sunset-violent.png">
+				</div>
+				<div class="item listen">
+					<img src="assets/listen/man-plays-the-horn.png">
+				</div>
+			</div>
+			<div class="board"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="face">
+			<h1>
+				To read:
+			</h1>
+		</div>
+		<div class="shelf">
+			<div class="items">
+				<div class="item read">
+					<img src="assets/read/solanin.png">
+				</div>
+			</div>
+			<div class="board"></div>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="face">
+			<h1>
+				To play:
+			</h1>
+		</div>
+
+		<div class="shelf">
+			<div class="items">
+				<div class="item play">
+					<img src="assets/play/dmc3.png">
+				</div>
+				<div class="item play">
+					<img src="assets/play/lop.png">
+				</div>
+			</div>
+			<div class="board"></div>
+		</div>
+	</div>
+</body>
+
+</html>
