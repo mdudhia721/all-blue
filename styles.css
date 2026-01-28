@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "MerchantCopy";
-	src: url("/fonts/merchant-copy/MerchantCopy.ttf") format("truetype");
+	src: url("fonts/merchant-copy/MerchantCopy.ttf") format("truetype");
 }
 
 body {
