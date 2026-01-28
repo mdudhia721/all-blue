@@ -25,9 +25,8 @@
 			font-size: 1.6rem;
 		}
 
-		h1,
-		p {
-			margin: 1rem 0rem 1rem 0rem;
+		h1, p {
+			margin: 0.4rem 0rem 0.4rem 0rem;
 			font-weight: 100;
 			text-align: right;
 		}
@@ -43,9 +42,10 @@
 			transition: background-color 0.4s ease;
 
 			display: flex;
-			align-items: start;
-			justify-content: end;
-			gap: 1rem;
+			flex-direction: column;
+			align-items: end;
+			justify-content: start;
+			gap: 0;
 		}
 
 		.face::after {
@@ -101,6 +101,15 @@
 			display: flex;
 		}
 
+		.item img {
+			transition: transform 0.2s ease;
+			transform-origin: bottom center;
+		}
+
+		.item:hover img {
+			transform: scale(1.08);
+		}
+		
 		.item.watch img {
 			width: 8rem;
 		}
@@ -139,8 +148,8 @@
 			<h1>
 				Media Recs
 			</h1>
-			<p style="text-align: left;">
-				Stuff of my favorites I'd like to recommend: Shows, movies, music, books, manga, games, etc.
+			<p style="text-align: right;">
+				Some of my favorites I'd like to recommend: Shows, movies, music, books, manga, games, etc.
 			</p>
 		</div>
 	</div>
@@ -202,9 +211,13 @@
 
 	<div class="row">
 		<div class="face">
+			<p>
+				I dont read muc
+			</p>
 			<h1>
 				To read:
 			</h1>
+			
 		</div>
 		<div class="shelf">
 			<div class="items">
